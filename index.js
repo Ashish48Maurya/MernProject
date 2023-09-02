@@ -7,6 +7,11 @@ const app = express();
 const routes = require('./routes/auth');
 const mongoConnect = require('./db/connect');
 
+
+app.get('/', (req, res) => {
+    res.send('Hello');
+})
+
 app.use(cors({
     origin: 'http://localhost:3000',
     credentials: true,

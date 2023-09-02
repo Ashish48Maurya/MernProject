@@ -23,7 +23,8 @@ app.use(routes);
 
 const start = async () => {
     try {
-        await mongoConnect(process.env.MONGODB_URL);
+        // await mongoConnect(process.env.MONGODB_URL);
+        await mongoConnect("mongodb+srv://Ashish:Ashishmaurya102938@cluster1.f21bdyh.mongodb.net/MernProject");
         app.listen(port, (req, res) => {
             console.log(`listening at http://localhost:${port}`);
         });

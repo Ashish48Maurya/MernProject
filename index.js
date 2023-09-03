@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
 })
 
 app.use(cors({
-    origin: 'https://sswiftnotee.netlify.app',
+    // origin: 'http://localhost:3000',   //for localMachine
+    origin: 'https://sswiftnotee.netlify.app',  //for Production
     credentials: true,
 }));
 

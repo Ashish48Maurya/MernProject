@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://64f43c2cfca83873fc422cc0--silly-meerkat-42a158.netlify.app/',
     credentials: true,
 }));
 
